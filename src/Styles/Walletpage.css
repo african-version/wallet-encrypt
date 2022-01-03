@@ -1,0 +1,118 @@
+.cards {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 5rem;
+    box-shadow: 0px 0px 3px 0px #e2e8f0;
+}
+.wallet-heading {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.cards h6 {
+    position: absolute;
+    right: 15px;
+    top: 35%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+}
+.cards img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    margin-top: -6px;
+}
+.cards-container {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 28px 35px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "metamask trust coinbase ledger"
+      "trezor formatic portis pocket"
+      "coinmoni aave monero binance"
+      "digitex atomic enjin eidoo"
+      "protocol squaree torus exodus"
+      "ronin safepal infinity solflare"
+}
+  
+.metamask { grid-area: metamask; }
+  
+.trust { grid-area: trust; }
+  
+.coinbase { grid-area: coinbase; }
+  
+.ledger { grid-area: ledger; }
+  
+.trezor { grid-area: trezor; }
+  
+.formatic { grid-area: formatic; }
+  
+.portis { grid-area: portis; }
+  
+.pocket { grid-area: pocket; }
+
+.coinmoni { grid-area: coinmoni; }
+
+.aave { grid-area: aave; }
+
+.monero { grid-area: monero; }
+
+.binance { grid-area: binance; }
+
+.digitex { grid-area: digitex; }
+
+.atomic { grid-area: atomic; }
+
+.enjin { grid-area: enjin; }
+
+.eidoo { grid-area: eidoo; }
+
+.protocol { grid-area: protocol; }
+
+.squaree { grid-area: squaree; }
+
+.torus { grid-area: torus; }
+
+.exodus { grid-area: exodus; }
+
+.ronin { grid-area: ronin; }
+
+.safepal { grid-area: safepal; }
+
+.infinity { grid-area: infinity; }
+
+.solflare { grid-area: solflare; }
+
+.authereum { grid-area: authereum; }
+  
+  
+@media screen and (max-width: 768px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 28px 35px;
+        grid-template-areas: 
+            "metamask trust"
+            "coinbase ledger"
+            "trezor formatic"
+            "portis pocket"
+            "coinmoni aave"
+            "monero binance"
+            "digitex atomic"
+            "enjin eidoo"
+            "protocol squaree"
+            "torus exodus"
+            "ronin safepal"
+            "infinity solflare"
+    }
+}
